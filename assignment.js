@@ -9,7 +9,7 @@ function kilometerToMeter(kilometer) {
         meter = kilometer * 1000;
     }
     else {
-        return 'Check your parameter value is inappropriate';
+        return 'Parameter value is inappropriate';
     }
     return meter;
 }
@@ -22,7 +22,7 @@ console.log('Kilometer to Meter: ', kiloToMeter);
 //coding to calculate budget for buying watch, phone and laptop according to their amount
 function budgetCalculator(watch, phone, laptop) {
     var estimatedCosts = 0;
-    //checking parameter value is null, less than 0 or string
+    //checking parameter value is not null, not less than 0 and not string
     if (((watch, phone, laptop) != null) && ((watch, phone, laptop) > 0) && (typeof (watch, phone, laptop) != 'string')) {
         var itemOne = watch * 50;
         var itemTwo = phone * 100;
@@ -30,7 +30,7 @@ function budgetCalculator(watch, phone, laptop) {
         estimatedCosts = itemOne + itemTwo + itemThree;
     }
     else {
-        return 'Check paremeter values';
+        return 'Check parameter values';
     }
     return estimatedCosts;
 }
