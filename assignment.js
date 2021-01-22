@@ -1,10 +1,10 @@
-// https://github.com/ronybarua-ethical18/javascript-problem-solving/blob/main/assignment.js
+// Github Link: https://github.com/ronybarua-ethical18/javascript-problem-solving/blob/main/assignment.js
 
 // Problem 1 solving section start from here ----------------------------------------------------------------------
-
 // converting kilometer to meter 
 function kilometerToMeter(kilometer) {
     var meter = 0;
+    // to make sure the kilometer value is not null, not less than zero and type is not string
     if (kilometer != null && kilometer > 0 && typeof kilometer != 'string') {
         meter = kilometer * 1000;
     }
@@ -13,18 +13,15 @@ function kilometerToMeter(kilometer) {
     }
     return meter;
 }
-var kiloToMeter = kilometerToMeter(10);
+var kiloToMeter = kilometerToMeter();         //calling the function
 console.log('Kilometer to Meter: ', kiloToMeter);
+// Problem 1 solving section end here ----------------------------------------------------------------------------
 
-// Problem 1 solving section end here ----------------------------------------------------------------------
 
-
-//Problem 2 solving section start from here----------------------------------------------------------------------
-
+//Problem 2 solving section start from here ----------------------------------------------------------------------
 //coding to calculate budget for buying watch, phone and laptop according to their amount
 function budgetCalculator(watch, phone, laptop) {
     var estimatedCosts = 0;
-
     //checking parameter value is null, less than 0 or string
     if (((watch, phone, laptop) != null) && ((watch, phone, laptop) > 0) && (typeof (watch, phone, laptop) != 'string')) {
         var itemOne = watch * 50;
@@ -37,18 +34,15 @@ function budgetCalculator(watch, phone, laptop) {
     }
     return estimatedCosts;
 }
-var budgetNeed = budgetCalculator(3, 4, 5);
+var budgetNeed = budgetCalculator();     //calling the function
 console.log("Budget Calculator: ", budgetNeed);
-
-//Problem 2 solving section end here ----------------------------------------------------------------------
+//Problem 2 solving section end here -----------------------------------------------------------------------------
 
 
 //Problem 3 solving section start from here ----------------------------------------------------------------------
-
 // coding to find out total cost based on stay time at hotel
 function hotelCost(stayTime) {
     var totalCost = 0;
-
     // to make sure parameter value is not null, not less than zero and type is number
     if (stayTime != null && stayTime > 0 && typeof stayTime != 'string') {
         if (stayTime <= 10) {
@@ -73,14 +67,12 @@ function hotelCost(stayTime) {
     }
     return totalCost;
 }
-var costs = hotelCost(60);
+var costs = hotelCost();          //calling the function
 console.log('Hotel Costs: ', costs);
-
-//Problem 3 solving section end here ----------------------------------------------------------------------
+//Problem 3 solving section end here -----------------------------------------------------------------------------
 
 
 //Problem 4 solving section start from here ----------------------------------------------------------------------
-
 // coding to find largest name from an array 
 function megaFriend(friendsName) {
     var largestName = '';
@@ -95,7 +87,7 @@ function megaFriend(friendsName) {
                 }
             }
             else {
-                return 'Paramete value should be string';
+                return 'Parameter value should be string';
             }
         }
     }
@@ -104,7 +96,6 @@ function megaFriend(friendsName) {
     }
     return largestName;
 }
-var longestName = megaFriend(['Rony', 'Jackson']);
+var longestName = megaFriend([]);  //calling the function
 console.log('Mega Friends: ', longestName);
-
-//Problem 4 solving section end here ----------------------------------------------------------------------
+//Problem 4 solving section end here -----------------------------------------------------------------------------
